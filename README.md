@@ -30,14 +30,16 @@ python3 bot.py
 
 # Commands
 
+command prefix: ```w.```
+
 following list of commands that Wire supports:
 
 ``` code
->help  Shows this message
->info  display about info
->ls    lists the members of the server
->mkdir creates a new channel
->rmdir deletes the channel you are currently in
+help  Shows this message
+info  display about info
+ls    lists the members of the server
+mkdir creates a new channel
+rmdir deletes the channel you are currently in
 ```
 
-Type `>help` to get a list of commands anytime.
+Type `w.help` to get a list of commands anytime.
