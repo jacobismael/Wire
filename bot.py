@@ -13,9 +13,9 @@ bot = commands.Bot(command_prefix='wire.')
 bot.remove_command("help")
 
 @bot.event
-async def on_ready():
+async def on_ready(ctx):
     await bot.change_presence(activity=discord.Game('>help'))
-    print(f'{bot.user.name} has connected to Discord!')
+    await ctx.send("Wire is active")
 
 
 @bot.command()
