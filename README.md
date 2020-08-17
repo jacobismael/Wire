@@ -6,7 +6,7 @@
 - - -
 
 
-![Wire Icon](https://media.discordapp.net/attachments/714340123327594511/726354184886026270/wire.png)
+![Wire Icon](https://icons.iconarchive.com/icons/xenatt/the-circle/512/App-Terminal-icon.png)
 
 A Discord bot I developed for me and some of my friends to use.
 
