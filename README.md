@@ -1,7 +1,7 @@
 # Wire
 ![Repo Size](https://img.shields.io/github/repo-size/jacobismael/wire?style=for-the-badge)
 ![Python](https://img.shields.io/github/languages/top/jacobismael/wire?color=success&style=for-the-badge)
-![GPL License](https://img.shields.io/github/license/jacobismael/wire?color=black&style=for-the-badge)
+![GPL License](https://img.shields.io/github/license/jacobismael/Wire?style=for-the-badge)
 
 - - -
 
