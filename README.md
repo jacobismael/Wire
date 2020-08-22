@@ -5,9 +5,6 @@
 
 - - -
 
-
-![Wire Icon](https://icons.iconarchive.com/icons/xenatt/the-circle/512/App-Terminal-icon.png)
-
 A Discord bot I developed for me and some of my friends to use.
 
 - - -
@@ -43,3 +40,8 @@ rmdir deletes the channel you are currently in
 ```
 
 Type `w.help` to get a list of commands anytime.
+
+- - -
+# Development
+
+Contact me in case you want collaborate with this bot or use any part of it.
