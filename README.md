@@ -5,7 +5,9 @@
 
 - - -
 
-A Discord bot I developed for me and some of my friends to use.
+A Discord bot I developed for me and some of my friends to use. Invite Wire to your server with this:
+
+[Invite Link](https://discord.com/api/oauth2/authorize?client_id=746629949208789034&permissions=8&scope=bot)
 
 - - -
 
