@@ -17,7 +17,7 @@ async def on_ready():
     print("Wire is active")
 
 @bot.command(name="clr", help='cleares the specified messages')
-@commands.has_role('admin')
+@commands.has_role('mod')
 async def clr(ctx, amount=5):
     if(amount == -1):
         amount = 1000000000
@@ -29,13 +29,13 @@ async def help(ctx):
     embed = discord.Embed(title="Wire Commands", description="List of Wire commands", color=0xffff00)
     embed.set_thumbnail(url='https://icons.iconarchive.com/icons/xenatt/the-circle/512/App-Terminal-icon.png')
     embed.set_author(name="Wire", icon_url='https://icons.iconarchive.com/icons/xenatt/the-circle/512/App-Terminal-icon.png')
-    embed.add_field(name="Admin Commands", value=" - `mkdir`\tcreates a new channel\n - `rmdir`\tdeletes the channel you are currently in\n - `clear`\tclears a specified amount of messages", inline=False)
+    embed.add_field(name="Mod Commands", value=" - `cc`\tcreates a new channel\n - `rc`\tdeletes the channel you are currently in\n - `clear`\tclears a specified amount of messages", inline=False)
     embed.add_field(name="General Commands", value=" - `help`\tShows this message\n - `ls`\tlists the members of the server\n - `info`\tshows about info", inline=False)
     await ctx.send(embed=embed)
 
 
 @bot.command(name='cc', help='creates a new channel')
-@commands.has_role('admin')
+@commands.has_role('mod')
 async def rc(ctx, channel_name='new-channel'):
     server = ctx.message.guild
     existing_channel = discord.utils.get(server.channels, name=channel_name)
@@ -46,18 +46,18 @@ async def rc(ctx, channel_name='new-channel'):
         await ctx.send("```Error: Channel with same name already exists```")
 
 @bot.command(name="rc", help='deletes the current channel you are in')
-@commands.has_role('admin')
+@commands.has_role('mod')
 async def rc(ctx):
     await ctx.channel.delete()
 
 @bot.command(name='kick')
-@commands.has_role('admin')
+@commands.has_role('mod')
 async def kick(ctx, member : discord.Member, reason=None):
     await member.kick(reason=reason)
     ctx.send("Kicked " + member)
 
 @bot.command(name='ban')
-@commands.has_role('admin')
+@commands.has_role('mod')
 async def ban(ctx, member : discord.Member, reason=None):
     await member.ban(reason=reason)
     ctx.send("Banned " + member)
